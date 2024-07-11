@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="calculator-container">
+        <div class="container">
+            <div class="result-container">
+                <p class="result">0</p>
+            </div>
+    
+            <div class="calculator-rows">
+                <button class="number clear-button" onclick="updateCalculation('clear');">AC</button>
+                <button class="number remainder-button" onclick="updateCalculation('%');";>%</button>
+                <button class="operators" onclick="updateCalculation('/');">/</button>                
+            </div>
+        
+            <div class="calculator-rows">
+                <button class="number" onclick="updateCalculation('7');">7</button>
+                <button class="number" onclick="updateCalculation('8');">8</button>
+                <button class="number" onclick="updateCalculation('9');">9</button>
+                <button class="operators" onclick="updateCalculation('*');">*</button>
+                
+            </div>
+            <div class="calculator-rows">
+                <button class="number" onclick="updateCalculation('4');";>4</button>
+                <button class="number" onclick="updateCalculation('5');";>5</button>
+                <button class="number" onclick="updateCalculation('6');">6</button>
+                <button class="operators" onclick="updateCalculation('-');">-</button>
+            </div>
+    
+            <div class="calculator-rows">
+                <button class="number" onclick="updateCalculation('1');";>1</button>
+                <button class="number" onclick="updateCalculation('2');";>2</button>
+                <button class="number" onclick="updateCalculation('3');">3</button>
+                <button class="operators" onclick="updateCalculation('+');">+</button>
+                
+            </div>
+    
+            <div class="calculator-rows">
+                <button class="number zero-button" onclick="updateCalculation('0');";>0</button>
+                <button class="number" onclick="updateCalculation('.');";>.</button>
+                <button class="number equal-sign" onclick="updateCalculation('=');">=</button>
+                
+            </div>
+            
+            
+        </div>
+    
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
